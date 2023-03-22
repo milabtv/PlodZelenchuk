@@ -48,6 +48,7 @@ namespace PlodZelenchuk
             }
             con.Open();
             selectquery = "SELECT * FROM producti";
+            SqlCommand comm = new SqlCommand(); 
             adpt = new SqlDataAdapter(selectquery, con);
             table = new DataTable();
             adpt.Fill(table);
